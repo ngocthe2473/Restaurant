@@ -1,7 +1,7 @@
 ﻿using System.Security.Claims;
 using System.Security.Principal;
 
-namespace ThuyTo.Extension
+namespace Restaurant.Extension
 {
     public static class IdentityExtension
     {

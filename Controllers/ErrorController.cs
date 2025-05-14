@@ -1,12 +1,12 @@
-﻿using ThuyTo.Models;
+﻿using Restaurant.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ThuyTo.Controllers
+namespace Restaurant.Controllers
 {
 	public class ErrorController : Controller
 	{
-		private readonly ThuyToContext _context;
-		public ErrorController(ThuyToContext context) 
+		private readonly RestaurantContext _context;
+		public ErrorController(RestaurantContext context) 
 		{ 
 			_context = context; 
 		}

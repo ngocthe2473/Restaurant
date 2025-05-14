@@ -1,11 +1,10 @@
-﻿
-using elFinder.NetCore;
+﻿using elFinder.NetCore;
 using elFinder.NetCore.Drivers.FileSystem;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
-namespace ThuyTo.Areas.Admin.Controllers
+namespace Restaurant.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("/Admin/el-finder-file-system")]

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ThuyTo.Models;
+namespace Restaurant.Models;
 
 public partial class Shipping
 {

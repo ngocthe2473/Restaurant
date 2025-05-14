@@ -1,11 +1,11 @@
 ﻿@using PagedList.Core.Mvc
-@model PagedList.Core.IPagedList<ThuyTo.Models.User>
+@model PagedList.Core.IPagedList<Restaurant.Models.User>
 @{
     int currentPage = ViewBag.currentPage;
     ViewData["Title"] = "Danh sach nguoi dung " + currentPage;
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
-@using ThuyTo.Ultilities;
+@using Restaurant.Ultilities;
 
 
 <div class="pagetitle">

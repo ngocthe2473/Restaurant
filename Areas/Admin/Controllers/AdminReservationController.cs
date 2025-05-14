@@ -1,16 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ThuyTo.Models;
+using Restaurant.Models;
 using System.Threading.Tasks;
 
-namespace ThuyTo.Areas.Admin.Controllers
+namespace Restaurant.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class AdminReservationController : Controller
     {
-        private readonly ThuyToContext _context;
+        private readonly RestaurantContext _context;
 
-        public AdminReservationController(ThuyToContext context)
+        public AdminReservationController(RestaurantContext context)
         {
             _context = context;
         }

@@ -30828,8 +30828,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>82435upld7</Fingerprint>
-      <Integrity>sJsx6h4zYeDtnAGo3J5kHoc2Zdt2rbWedpMeU069Bxs=</Integrity>
+      <Fingerprint>9k5c731dxi</Fingerprint>
+      <Integrity>17VyOqjUHC2i9iKgFnOLXSLrswATkb2y6UPH6l+KDIk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Client\js\getip.js'))</OriginalItemSpec>

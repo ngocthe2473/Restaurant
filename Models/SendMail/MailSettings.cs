@@ -1,4 +1,4 @@
-﻿namespace ThuyTo.Models.SendMail
+﻿namespace Restaurant.Models.SendMail
 {
     public class MailSettings
     {

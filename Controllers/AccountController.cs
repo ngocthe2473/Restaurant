@@ -1,9 +1,9 @@
 ﻿using AspNetCoreHero.ToastNotification.Abstractions;
-using ThuyTo.Extension;
-using ThuyTo.Models;
-using ThuyTo.Models.Authentication;
-using ThuyTo.SessionSystem;
-using ThuyTo.Ultilities;
+using Restaurant.Extension;
+using Restaurant.Models;
+using Restaurant.Models.Authentication;
+using Restaurant.SessionSystem;
+using Restaurant.Ultilities;
 using MailKit.Net.Smtp;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -11,13 +11,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MimeKit;
 
-namespace ThuyTo.Controllers
+namespace Restaurant.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly ThuyToContext _context;
+        private readonly RestaurantContext _context;
         private readonly INotyfService _notyfService;
-        public AccountController(ThuyToContext context, INotyfService notyfService)
+        public AccountController(RestaurantContext context, INotyfService notyfService)
         {
             _context = context;
             _notyfService = notyfService;
@@ -119,7 +119,7 @@ namespace ThuyTo.Controllers
                 {
                     Body = bodyBuiler.ToMessageBody()
                 };
-                message.From.Add(new MailboxAddress("ThuyTo", "ziang@ziang.me"));
+                message.From.Add(new MailboxAddress("Restaurant", "ziang@ziang.me"));
                 message.To.Add(new MailboxAddress(user?.FullName, user?.Email));
                 message.Subject = "Mã xác nhận lấy lại mật khẩu";
                 client.Send(message);

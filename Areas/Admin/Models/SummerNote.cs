@@ -1,4 +1,4 @@
-﻿namespace ThuyTo.Areas.Admin.Models
+﻿namespace Restaurant.Areas.Admin.Models
 {
     public class SummerNote
     {

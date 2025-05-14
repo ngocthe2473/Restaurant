@@ -10417,9 +10417,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RestaurantManagement\\restaurant\\ThuyTo.csproj",
-      "projectName": "ThuyTo",
-      "projectPath": "D:\\RestaurantManagement\\restaurant\\ThuyTo.csproj",
+      "projectUniqueName": "D:\\RestaurantManagement\\restaurant\\Restaurant.csproj",
+      "projectName": "Restaurant",
+      "projectPath": "D:\\RestaurantManagement\\restaurant\\Restaurant.csproj",
       "packagesPath": "C:\\Users\\ngoct\\.nuget\\packages\\",
       "outputPath": "D:\\RestaurantManagement\\restaurant\\obj\\",
       "projectStyle": "PackageReference",

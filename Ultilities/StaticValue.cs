@@ -1,4 +1,4 @@
-﻿namespace ThuyTo.Ultilities
+﻿namespace Restaurant.Ultilities
 {
     public class StaticValue
     {

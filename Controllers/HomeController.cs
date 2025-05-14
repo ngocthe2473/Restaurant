@@ -1,16 +1,16 @@
-﻿using ThuyTo.Models;
-using ThuyTo.Models.Authentication;
-using ThuyTo.SessionSystem;
+﻿using Restaurant.Models;
+using Restaurant.Models.Authentication;
+using Restaurant.SessionSystem;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace ThuyTo.Controllers
+namespace Restaurant.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly ThuyToContext _context;
-        public HomeController(ILogger<HomeController> logger, ThuyToContext context)
+        private readonly RestaurantContext _context;
+        public HomeController(ILogger<HomeController> logger, RestaurantContext context)
         {
             _logger = logger;
             _context = context;

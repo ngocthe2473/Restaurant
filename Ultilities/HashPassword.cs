@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 
-namespace ThuyTo.Extension
+namespace Restaurant.Extension
 {
     public static class HashPassword
     {

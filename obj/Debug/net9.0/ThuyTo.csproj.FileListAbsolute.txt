@@ -3839,7 +3839,6 @@ D:\RestaurantManagement\restaurant\obj\Debug\net9.0\compressed\zxpnw8wqxw-4yl0l6
 D:\RestaurantManagement\restaurant\obj\Debug\net9.0\compressed\iy0nfs0opr-k59yubp7wk.gz
 D:\RestaurantManagement\restaurant\obj\Debug\net9.0\compressed\5pdsono7m2-djtd12svq4.gz
 D:\RestaurantManagement\restaurant\obj\Debug\net9.0\compressed\kzrm76rar1-zu238p5lxg.gz
-D:\RestaurantManagement\restaurant\obj\Debug\net9.0\compressed\kq5k3sd2b4-82435upld7.gz
 D:\RestaurantManagement\restaurant\obj\Debug\net9.0\compressed\dbnb1u6fjj-lrqn8z9hfd.gz
 D:\RestaurantManagement\restaurant\obj\Debug\net9.0\compressed\9dg282nws0-uovj7gxr5x.gz
 D:\RestaurantManagement\restaurant\obj\Debug\net9.0\compressed\zxskh9t9zm-ce05zvsbbl.gz
@@ -3959,3 +3958,5 @@ D:\RestaurantManagement\restaurant\obj\Debug\net9.0\refint\ThuyTo.dll
 D:\RestaurantManagement\restaurant\obj\Debug\net9.0\ThuyTo.pdb
 D:\RestaurantManagement\restaurant\obj\Debug\net9.0\ThuyTo.genruntimeconfig.cache
 D:\RestaurantManagement\restaurant\obj\Debug\net9.0\ref\ThuyTo.dll
+D:\RestaurantManagement\restaurant\obj\Debug\net9.0\ThuyTo.sourcelink.json
+D:\RestaurantManagement\restaurant\obj\Debug\net9.0\compressed\kq5k3sd2b4-9k5c731dxi.gz

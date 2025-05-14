@@ -1,16 +1,16 @@
 ﻿using AspNetCoreHero.ToastNotification.Abstractions;
-using ThuyTo.Models;
-using ThuyTo.SessionSystem;
+using Restaurant.Models;
+using Restaurant.SessionSystem;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
-namespace ThuyTo.Controllers
+namespace Restaurant.Controllers
 {
     public class PageController : Controller
     {
-        private readonly ThuyToContext _context;
+        private readonly RestaurantContext _context;
         private readonly INotyfService _otyfService;
-        public PageController(ThuyToContext context, INotyfService notyfService)
+        public PageController(RestaurantContext context, INotyfService notyfService)
         {
             _context = context;
             _otyfService = notyfService;

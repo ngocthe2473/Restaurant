@@ -1,23 +1,23 @@
 ﻿using AspNetCoreHero.ToastNotification.Abstractions;
-using ThuyTo.Models;
-using ThuyTo.Models.Authentication;
-using ThuyTo.Ultilities;
+using Restaurant.Models;
+using Restaurant.Models.Authentication;
+using Restaurant.Ultilities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 using PagedList.Core;
 
-namespace ThuyTo.Areas.Admin.Controllers
+namespace Restaurant.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [AdminAuthentication]
 
     public class PostController : Controller
     {
-        private readonly ThuyToContext _context;
+        private readonly RestaurantContext _context;
         private readonly INotyfService _notyf;
-        public PostController(ThuyToContext context, INotyfService notyf)
+        public PostController(RestaurantContext context, INotyfService notyf)
         {
             _context = context;
             _notyf = notyf;

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ThuyTo.Areas.Admin.Controllers
+namespace Restaurant.Areas.Admin.Controllers
 {
     public class FileManageController : Controller
     {

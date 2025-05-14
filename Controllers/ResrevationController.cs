@@ -1,20 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ThuyTo.Models;
+using Restaurant.Models;
 
-namespace ThuyTo.Controllers
+namespace Restaurant.Controllers
 {
     public class ResrevationController : Controller
     {
-        private readonly ThuyToContext thuyToContext;
-        public ResrevationController(ThuyToContext context)
+        private readonly RestaurantContext restaurantContext;
+        public ResrevationController(RestaurantContext context)
         {
-            thuyToContext = context;
+            restaurantContext = context;
         }
         [HttpPost]
         [Route("/SaveReservation")]
         public IActionResult SaveReservation([FromBody] Reservation reservation)
         {
-            var existingReservation = thuyToContext.Reservations.Find(reservation.ReservationId);
+            var existingReservation = restaurantContext.Reservations.Find(reservation.ReservationId);
             if (existingReservation == null || existingReservation.Status != ReservationStatus.Available)
             {
                 return BadRequest("Bàn không khả dụng.");
@@ -27,7 +27,7 @@ namespace ThuyTo.Controllers
             existingReservation.Status = ReservationStatus.Pending;
             existingReservation.NumberOfGuests = reservation.NumberOfGuests;
 
-            thuyToContext.SaveChanges();
+            restaurantContext.SaveChanges();
 
             return Ok("Đặt bàn thành công!");
         }

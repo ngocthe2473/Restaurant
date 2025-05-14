@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace ThuyTo.Models;
+namespace Restaurant.Models;
 
-public partial class ThuyToContext : DbContext
+public partial class RestaurantContext : DbContext
 {
-    public ThuyToContext()
+    public RestaurantContext()
     {
     }
 
-    public ThuyToContext(DbContextOptions<ThuyToContext> options)
+    public RestaurantContext(DbContextOptions<RestaurantContext> options)
         : base(options)
     {
     }

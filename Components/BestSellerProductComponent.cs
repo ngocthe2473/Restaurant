@@ -1,15 +1,15 @@
-﻿using ThuyTo.Models;
-using ThuyTo.SessionSystem;
+﻿using Restaurant.Models;
+using Restaurant.SessionSystem;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace ThuyTo.Components
+namespace Restaurant.Components
 {
 	[ViewComponent(Name = "BestSellerProduct")]
 	public class BestSellerProductComponent : ViewComponent
 	{
-		private readonly ThuyToContext _context;
-		public BestSellerProductComponent(ThuyToContext context)
+		private readonly RestaurantContext _context;
+		public BestSellerProductComponent(RestaurantContext context)
 		{
 			_context = context;
 		}

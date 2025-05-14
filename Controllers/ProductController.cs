@@ -1,5 +1,5 @@
-﻿using ThuyTo.Models;
-using ThuyTo.SessionSystem;
+﻿using Restaurant.Models;
+using Restaurant.SessionSystem;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
@@ -7,12 +7,12 @@ using Newtonsoft.Json;
 using PagedList.Core;
 using System.Globalization;
 
-namespace ThuyTo.Controllers
+namespace Restaurant.Controllers
 {
 	public class ProductController : Controller
 	{
-		private readonly ThuyToContext _context;
-		public ProductController(ThuyToContext context)
+		private readonly RestaurantContext _context;
+		public ProductController(RestaurantContext context)
 		{
 			_context = context;
 		}

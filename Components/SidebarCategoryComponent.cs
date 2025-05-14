@@ -1,15 +1,15 @@
-﻿using ThuyTo.Models;
-using ThuyTo.SessionSystem;
+﻿using Restaurant.Models;
+using Restaurant.SessionSystem;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace ThuyTo.Components
+namespace Restaurant.Components
 {
 	[ViewComponent(Name = "SidebarCategory")]
 	public class SidebarCategoryComponent : ViewComponent
 	{
-		private readonly ThuyToContext _context;
-		public SidebarCategoryComponent(ThuyToContext context)
+		private readonly RestaurantContext _context;
+		public SidebarCategoryComponent(RestaurantContext context)
 		{
 			_context = context;
 		}

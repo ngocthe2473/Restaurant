@@ -1,22 +1,22 @@
 ﻿using AspNetCoreHero.ToastNotification.Abstractions;
-using ThuyTo.Extension;
-using ThuyTo.Models;
-using ThuyTo.Models.Authentication;
-using ThuyTo.Ultilities;
+using Restaurant.Extension;
+using Restaurant.Models;
+using Restaurant.Models.Authentication;
+using Restaurant.Ultilities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using PagedList.Core;
 
-namespace ThuyTo.Areas.Admin.Controllers
+namespace Restaurant.Areas.Admin.Controllers
 {
 	[Area("Admin")]
 	[AdminAuthentication]
 	public class AccountController : Controller
 	{
-		private readonly ThuyToContext _context;
+		private readonly RestaurantContext _context;
 		private readonly INotyfService _notyf;
-		public AccountController(ThuyToContext context, INotyfService notyf)
+		public AccountController(RestaurantContext context, INotyfService notyf)
 		{
 			_context = context;
 			_notyf = notyf;
@@ -135,7 +135,7 @@ namespace ThuyTo.Areas.Admin.Controllers
                 if (avatar != null)
                 {
                     string extension = Path.GetExtension(avatar.FileName);
-                    string image = Extension.Extensions.ToUrlFriendly(user.FullName) + extension;
+                    string image = Extensions.ToUrlFriendly(user.FullName) + extension;
                     user.Avatar = await Functions.UploadFile(avatar, @"Users", image.ToLower());
                     user.Avatar = "Users/" + user.Avatar;
                 }

@@ -1,6 +1,6 @@
 using AspNetCoreHero.ToastNotification.Abstractions;
-using ThuyTo.Models;
-using ThuyTo.SessionSystem;
+using Restaurant.Models;
+using Restaurant.SessionSystem;
 using MailKit.Net.Smtp;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -9,16 +9,16 @@ using Microsoft.IdentityModel.Tokens;
 using MimeKit;
 using Newtonsoft.Json;
 
-namespace ThuyTo.Controllers
+namespace Restaurant.Controllers
 {
     public class CartController : Controller
     {
-        private readonly ThuyToContext _context;
+        private readonly RestaurantContext _context;
 		private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IHttpContextAccessor _httpContextAccessor;
 		private readonly INotyfService _notyf;
 
-		public CartController(ThuyToContext context, IWebHostEnvironment webHostEnvironment, IHttpContextAccessor httpContextAccessor, INotyfService notyf)
+		public CartController(RestaurantContext context, IWebHostEnvironment webHostEnvironment, IHttpContextAccessor httpContextAccessor, INotyfService notyf)
 		{
 			_context = context;
 			_webHostEnvironment = webHostEnvironment;
@@ -334,7 +334,7 @@ namespace ThuyTo.Controllers
 					Body = bodyBuiler.ToMessageBody()
 				};
 
-				message.From.Add(new MailboxAddress("ThuyTo", "ziang@ziang.me"));
+				message.From.Add(new MailboxAddress("Restaurant", "ziang@ziang.me"));
 				message.To.Add(new MailboxAddress(user?.FullName, user?.Email));
 				message.Subject = "Xác nhận đặt hàng";
 				client.Send(message);

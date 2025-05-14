@@ -1,15 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ThuyTo.Models;
-using ThuyTo.SessionSystem;
+using Restaurant.Models;
+using Restaurant.SessionSystem;
 
-namespace ThuyTo.Areas.Admin.Components
+namespace Restaurant.Areas.Admin.Components
 {
     [ViewComponent(Name = "AdminHeader")]
     public class AdminHeaderComponent : ViewComponent
     {
-        private readonly ThuyToContext _context;
+        private readonly RestaurantContext _context;
 
-        public AdminHeaderComponent(ThuyToContext context)
+        public AdminHeaderComponent(RestaurantContext context)
         {
             _context = context;
         }

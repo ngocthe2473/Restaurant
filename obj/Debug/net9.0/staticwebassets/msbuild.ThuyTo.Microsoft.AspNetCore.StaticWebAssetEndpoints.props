@@ -20544,17 +20544,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zu238p5lxg"},{"Name":"integrity","Value":"sha256-O82ALp93hJ58HpPIcnn7uwTUWUnSvnmwNWbOrN4psVg="},{"Name":"label","Value":"_content/ThuyTo/Client/js/bootstrap.min.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"58078"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022O82ALp93hJ58HpPIcnn7uwTUWUnSvnmwNWbOrN4psVg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 18 Nov 2024 15:59:00 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/ThuyTo/Client/js/getip.82435upld7.js">
+    <StaticWebAssetEndpoint Include="_content/ThuyTo/Client/js/getip.9k5c731dxi.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Client\js\getip.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"82435upld7"},{"Name":"integrity","Value":"sha256-sJsx6h4zYeDtnAGo3J5kHoc2Zdt2rbWedpMeU069Bxs="},{"Name":"label","Value":"_content/ThuyTo/Client/js/getip.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"765"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022sJsx6h4zYeDtnAGo3J5kHoc2Zdt2rbWedpMeU069Bxs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 19 Nov 2024 16:58:21 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9k5c731dxi"},{"Name":"integrity","Value":"sha256-17VyOqjUHC2i9iKgFnOLXSLrswATkb2y6UPH6l\u002BKDIk="},{"Name":"label","Value":"_content/ThuyTo/Client/js/getip.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"769"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002217VyOqjUHC2i9iKgFnOLXSLrswATkb2y6UPH6l\u002BKDIk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 14 May 2025 03:27:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ThuyTo/Client/js/getip.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Client\js\getip.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-sJsx6h4zYeDtnAGo3J5kHoc2Zdt2rbWedpMeU069Bxs="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"765"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022sJsx6h4zYeDtnAGo3J5kHoc2Zdt2rbWedpMeU069Bxs=\u0022"},{"Name":"Last-Modified","Value":"Tue, 19 Nov 2024 16:58:21 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-17VyOqjUHC2i9iKgFnOLXSLrswATkb2y6UPH6l\u002BKDIk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"769"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002217VyOqjUHC2i9iKgFnOLXSLrswATkb2y6UPH6l\u002BKDIk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 14 May 2025 03:27:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ThuyTo/Client/js/jquery-3.4.1.min.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Client\js\jquery-3.4.1.min.js'))</AssetFile>

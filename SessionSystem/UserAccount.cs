@@ -1,4 +1,4 @@
-﻿namespace ThuyTo.SessionSystem
+﻿namespace Restaurant.SessionSystem
 {
     [Serializable]
     public  class UserAccount

@@ -1,15 +1,15 @@
-﻿using ThuyTo.Models;
-using ThuyTo.SessionSystem;
+﻿using Restaurant.Models;
+using Restaurant.SessionSystem;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PagedList.Core;
 
-namespace ThuyTo.Controllers
+namespace Restaurant.Controllers
 {
     public class BlogController : Controller
     {
-        private readonly ThuyToContext _context;
-        public BlogController(ThuyToContext context)
+        private readonly RestaurantContext _context;
+        public BlogController(RestaurantContext context)
         {
             _context = context;
         }

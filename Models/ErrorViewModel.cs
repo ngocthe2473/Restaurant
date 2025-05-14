@@ -1,4 +1,4 @@
-namespace ThuyTo.Models
+namespace Restaurant.Models
 {
     public class ErrorViewModel
     {

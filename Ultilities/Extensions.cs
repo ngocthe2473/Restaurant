@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using System.Text.RegularExpressions;
 
-namespace ThuyTo.Extension
+namespace Restaurant.Extension
 {
     public static class Extensions
     {

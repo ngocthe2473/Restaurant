@@ -1,15 +1,15 @@
-﻿using ThuyTo.Models;
-using ThuyTo.SessionSystem;
+﻿using Restaurant.Models;
+using Restaurant.SessionSystem;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace ThuyTo.Components
+namespace Restaurant.Components
 {
 	[ViewComponent(Name = "HotBlog")]
 	public class HotBlogComponent : ViewComponent
 	{
-		private readonly ThuyToContext _context;
-		public HotBlogComponent(ThuyToContext context)
+		private readonly RestaurantContext _context;
+		public HotBlogComponent(RestaurantContext context)
 		{
 			_context = context;
 		}

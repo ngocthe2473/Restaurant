@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNet.SignalR;
-namespace ThuyTo.Areas.Admin.Hubs
+namespace Restaurant.Areas.Admin.Hubs
 {
     public class NotificationHub : Hub
     {

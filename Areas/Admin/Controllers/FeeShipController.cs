@@ -1,18 +1,18 @@
-﻿using ThuyTo.Models;
-using ThuyTo.Models.Authentication;
+﻿using Restaurant.Models;
+using Restaurant.Models.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System;
 
-namespace ThuyTo.Areas.Admin.Controllers
+namespace Restaurant.Areas.Admin.Controllers
 {
 	[Area("Admin")] 
 
     public class FeeShipController : Controller
 	{
-		private readonly ThuyToContext _context;
-		public FeeShipController(ThuyToContext context)
+		private readonly RestaurantContext _context;
+		public FeeShipController(RestaurantContext context)
 		{
 			_context = context;
 		}

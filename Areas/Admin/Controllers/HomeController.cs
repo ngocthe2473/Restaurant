@@ -1,7 +1,7 @@
-﻿using ThuyTo.Models.Authentication;
+﻿using Restaurant.Models.Authentication;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ThuyTo.Areas.Admin.Controllers
+namespace Restaurant.Areas.Admin.Controllers
 {
 	[Area("Admin")]
     [AdminAuthentication]

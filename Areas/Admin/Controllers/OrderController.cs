@@ -1,22 +1,22 @@
-﻿using ThuyTo.Models.Authentication;
-using ThuyTo.Models;
-using ThuyTo.SessionSystem;
+﻿using Restaurant.Models.Authentication;
+using Restaurant.Models;
+using Restaurant.SessionSystem;
 using Microsoft.AspNetCore.Mvc;
 using PagedList.Core;
 using MailKit.Search;
 using Microsoft.EntityFrameworkCore;
 using AspNetCoreHero.ToastNotification.Abstractions;
 
-namespace ThuyTo.Areas.Admin.Controllers
+namespace Restaurant.Areas.Admin.Controllers
 {
 	[Area("Admin")]
     [AdminAuthentication]
 
     public class OrderController : Controller
 	{
-		private readonly ThuyToContext _context;
+		private readonly RestaurantContext _context;
         private readonly INotyfService _notyf;
-		public OrderController(ThuyToContext context, INotyfService notyf)
+		public OrderController(RestaurantContext context, INotyfService notyf)
 		{
 			_context = context;
             _notyf = notyf;

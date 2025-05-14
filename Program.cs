@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ThuyTo.Models;
+using Restaurant.Models;
 using Microsoft.Extensions.Options;
 using AspNetCoreHero.ToastNotification;
 using AspNetCoreHero.ToastNotification.Extensions;
@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 var connection = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new Exception("ERROR");
-builder.Services.AddDbContext<ThuyToContext>(options => 
+builder.Services.AddDbContext<RestaurantContext>(options => 
     options.UseMySql(connection, ServerVersion.AutoDetect(connection)));
 
 /*var mailsettings = builder.Configuration.GetSection("MailSettings");
@@ -21,7 +21,7 @@ builder.Services.AddControllersWithViews()
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(cfg =>
 {
-    cfg.Cookie.Name = "ThuyTo";             // Đặt tên Session - tên này sử dụng ở Browser (Cookie)
+    cfg.Cookie.Name = "Restaurant";             // Đặt tên Session - tên này sử dụng ở Browser (Cookie)
     cfg.IdleTimeout = TimeSpan.FromMinutes(30);    // Thời gian tồn tại của Session
     cfg.Cookie.HttpOnly = true;
     cfg.Cookie.IsEssential = true;
@@ -71,4 +71,4 @@ app.MapControllerRoute(
 
 app.Run();
 
-//Scaffold-DbContext "Server=.\SQLExpress;Database=ThuyTo;Trusted_Connection=True;TrustServerCertificate=True; Connection Timeout=3600" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force
+//Scaffold-DbContext "Server=.\SQLExpress;Database=Restaurant;Trusted_Connection=True;TrustServerCertificate=True; Connection Timeout=3600" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force

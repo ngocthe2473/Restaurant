@@ -1,8 +1,8 @@
-﻿using ThuyTo.SessionSystem;
+﻿using Restaurant.SessionSystem;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace ThuyTo.Models.Authentication
+namespace Restaurant.Models.Authentication
 {
 	public class AdminAuthentication : ActionFilterAttribute
 	{

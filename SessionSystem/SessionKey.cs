@@ -1,4 +1,4 @@
-﻿namespace ThuyTo.SessionSystem
+﻿namespace Restaurant.SessionSystem
 {
     public static class SessionKey
     {

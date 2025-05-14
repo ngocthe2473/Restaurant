@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting.Internal;
 using MimeKit;
 
-namespace ThuyTo.Controllers
+namespace Restaurant.Controllers
 {
 	public class SendmailController : Controller
 	{

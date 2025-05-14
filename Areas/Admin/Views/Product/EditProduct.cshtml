@@ -1,4 +1,4 @@
-﻿@model ThuyTo.Models.Product;
+﻿@model Restaurant.Models.Product;
 @{
     ViewData["Title"] = "Create";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
@@ -82,7 +82,7 @@
 
 </section>
 @{
-    var CategoryDetail = new ThuyTo.Areas.Admin.Models.SummerNote("#CategoryDetail");
+    var CategoryDetail = new Restaurant.Areas.Admin.Models.SummerNote("#CategoryDetail");
     <partial name="_SummerNote" model="CategoryDetail" />
 }
 

@@ -1,20 +1,20 @@
-﻿using ThuyTo.Models;
-using ThuyTo.Models.Authentication;
-using ThuyTo.SessionSystem;
-using ThuyTo.Ultilities;
+﻿using Restaurant.Models;
+using Restaurant.Models.Authentication;
+using Restaurant.SessionSystem;
+using Restaurant.Ultilities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
-namespace ThuyTo.Areas.Admin.Controllers
+namespace Restaurant.Areas.Admin.Controllers
 {
 	[Area("Admin")]
     [AdminAuthentication]
 
     public class MenuController : Controller
 	{
-		private readonly ThuyToContext _context;
-		public MenuController(ThuyToContext context)
+		private readonly RestaurantContext _context;
+		public MenuController(RestaurantContext context)
 		{
 			_context = context;
 		}

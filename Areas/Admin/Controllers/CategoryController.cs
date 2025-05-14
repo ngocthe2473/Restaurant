@@ -1,7 +1,7 @@
-﻿using ThuyTo.Extension;
-using ThuyTo.Models;
-using ThuyTo.Models.Authentication;
-using ThuyTo.Ultilities;
+﻿using Restaurant.Extension;
+using Restaurant.Models;
+using Restaurant.Models.Authentication;
+using Restaurant.Ultilities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.CodeAnalysis.Options;
@@ -9,15 +9,15 @@ using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Linq;
 using PagedList.Core;
 
-namespace ThuyTo.Areas.Admin.Controllers
+namespace Restaurant.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [AdminAuthentication]
 
     public class CategoryController : Controller
     {
-        private readonly ThuyToContext _context;
-        public CategoryController(ThuyToContext context)
+        private readonly RestaurantContext _context;
+        public CategoryController(RestaurantContext context)
         {
             _context = context;
         }

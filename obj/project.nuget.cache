@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CTMPU+asEKw=",
+  "dgSpecHash": "3S0LCWdeBUc=",
   "success": true,
-  "projectFilePath": "D:\\RestaurantManagement\\restaurant\\ThuyTo.csproj",
+  "projectFilePath": "D:\\RestaurantManagement\\restaurant\\Restaurant.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ngoct\\.nuget\\packages\\aspnetcore.sasscompiler\\1.69.3\\aspnetcore.sasscompiler.1.69.3.nupkg.sha512",
     "C:\\Users\\ngoct\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",

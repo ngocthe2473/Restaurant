@@ -10,7 +10,7 @@ async function fetchIPAddress() {
 
 function checkDomain() {
     const currentUrl = window.location.href;
-    const allowedDomains = ['localhost', '192.168.1.91', 'thuyto.nvtai.id.vn'];
+    const allowedDomains = ['localhost', '192.168.1.91', 'restaurant.nvtai.id.vn'];
 
     const isAllowed = allowedDomains.some(domain => currentUrl.includes(domain));
 

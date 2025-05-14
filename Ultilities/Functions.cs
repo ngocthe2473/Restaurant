@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 
-namespace ThuyTo.Ultilities
+namespace Restaurant.Ultilities
 {
     public class Functions
     {

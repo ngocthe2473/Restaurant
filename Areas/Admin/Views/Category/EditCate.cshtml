@@ -1,4 +1,4 @@
-﻿@model ThuyTo.Models.Category;
+﻿@model Restaurant.Models.Category;
 @{
     ViewData["Title"] = "EditCate";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
@@ -75,7 +75,7 @@
 
 </section>
 @{
-    var summerNote = new ThuyTo.Areas.Admin.Models.SummerNote("#Detail");
+    var summerNote = new Restaurant.Areas.Admin.Models.SummerNote("#Detail");
     <partial name="_SummerNote" model="summerNote" />
 }
 @section Scripts {

@@ -1,17 +1,17 @@
 ﻿using AspNetCoreHero.ToastNotification.Abstractions;
-using ThuyTo.Models;
-using ThuyTo.Models.Authentication;
-using ThuyTo.SessionSystem;
+using Restaurant.Models;
+using Restaurant.Models.Authentication;
+using Restaurant.SessionSystem;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace ThuyTo.Controllers
+namespace Restaurant.Controllers
 {
 	public class OrderController : Controller
 	{
-		private readonly ThuyToContext _context;
+		private readonly RestaurantContext _context;
 		private readonly INotyfService _notyf;
-		public OrderController(ThuyToContext context, INotyfService notyf)
+		public OrderController(RestaurantContext context, INotyfService notyf)
 		{
 			_context = context;
 			_notyf = notyf;
