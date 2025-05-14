@@ -1,0 +1,87 @@
+﻿@model IEnumerable<ThuyTo.Models.Reservation>
+@{
+    ViewData["Title"] = "Quản lý đặt bàn";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <h1 class="mt-4">Quản lý đặt bàn</h1>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table mr-1"></i>
+            Danh sách đặt bàn
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Họ tên</th>
+                            <th>Số điện thoại</th>
+                            <th>Email</th>
+                            <th>Số khách</th>
+                            <th>Ngày đặt</th>
+                            <th>Trạng thái</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.ReservationId</td>
+                                <td>@item.FullName</td>
+                                <td>@item.Phone</td>
+                                <td>@item.Email</td>
+                                <td>@item.NumberOfGuests</td>
+                                <td>@item.ReservationDate.ToString("dd/MM/yyyy HH:mm")</td>
+                                <td>
+                                    <select class="form-control status-select" data-id="@item.ReservationId">
+                                        @{
+                                            var statuses = new[] {
+                                                new { Value = "Available", Text = "Trống", Selected = item.Status == ReservationStatus.Available },
+                                                new { Value = "Pending", Text = "Chờ xác nhận", Selected = item.Status == ReservationStatus.Pending },
+                                                new { Value = "Confirmed", Text = "Đã xác nhận", Selected = item.Status == ReservationStatus.Confirmed },
+                                                new { Value = "Cancelled", Text = "Đã hủy", Selected = item.Status == ReservationStatus.Cancelled },
+                                                new { Value = "Completed", Text = "Hoàn thành", Selected = item.Status == ReservationStatus.Completed }
+                                            };
+                                        }
+                                        @foreach (var status in statuses)
+                                        {
+                                            <option value="@status.Value" selected="@status.Selected">@status.Text</option>
+                                        }
+                                    </select>
+                                </td>
+                                <td>
+                                    <a href="@Url.Action("Details", new { id = item.ReservationId })" class="btn btn-primary btn-sm">Chi tiết</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('.status-select').change(function () {
+                var id = $(this).data('id');
+                var status = $(this).val();
+                $.post('/Admin/AdminReservation/UpdateStatus', { id: id, status: status }, function (result) {
+                    if (result.success) {
+                        toastr.success('Cập nhật trạng thái thành công');
+                    } else {
+                        toastr.error('Cập nhật trạng thái thất bại');
+                    }
+                });
+            });
+        });
+    </script>
+}
+
+<div id="toastContainer" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1055;"></div>
+
